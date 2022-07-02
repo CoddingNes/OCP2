@@ -1,18 +1,64 @@
-html {
-    scroll-behavior: smooth;
-  }
-  
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    border: 2px #0065FC solid;
+  }
+
+@font-face{
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
 }
 
-body {
-  max-width: 2880px;
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+  max-width: 1440px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  margin: auto;
 }
 
 header {
   display: flex;
-  
+  justify-content:space-between;
+  align-items: center;
 }
+
+.booki {
+  max-height: 100%;
+} 
+
+.box__booki {
+  margin-top: 80px;
+  height: 60px;
+}
+
+nav {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  border: 2px #0065FC solid;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+
+}
+
