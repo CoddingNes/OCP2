@@ -1,14 +1,82 @@
-
-html {
-    scroll-behavior: smooth;
-  }
-  
 * {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 0px #0065FC solid;
 }
 
-i {
-  color: red;
+@font-face{
+font-family: 'Raleway';
+src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+max-width: 1440px;
+font-family: Raleway, Arial, Helvetica, sans-serif;
+margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a :focus {
+  color: black;
+}
+
+.filtres i {
+  padding: 0px 0px 0px 0px;
+}
+
+.filtres i:hover {
+}
+
+.filtre__icone {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-left: -4px;
+  width: 60px;
+  height: 60px;
+  background-color: #DEEBFF;
+  color: #0065FC;
+  border-radius: 30px;
+}
+
+.filtre__icone:hover {
+  width: 64px;
+  height: 64px;
+  background-color: #0065FC;
+  color: #DEEBFF;
+  font-size: 28px;
+}
+
+
+.filtres {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: capitalize;
+  height: 60px;
+  display: flex;
+
+}
+
+.filtre {
+  display: flex;
+  align-items: center;
+  border: 4px solid #F2F2F2;
+  border-radius: 40px;
+  margin: 0px 10px 0px 10px;
+}
+
+.filtre p {
+  padding: 0px 10px 0px 10px;
+
 }
