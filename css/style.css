@@ -1,14 +1,30 @@
-
-html {
-    scroll-behavior: smooth;
-  }
-  
 * {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 0px #0065FC solid;
 }
 
-i {
-  color: red;
+@font-face{
+font-family: 'Raleway';
+src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+max-width: 1440px;
+font-family: Raleway, Arial, Helvetica, sans-serif;
+margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a :focus {
+  color: black;
 }
