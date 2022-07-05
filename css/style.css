@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
   }
@@ -9,6 +8,11 @@ html {
     -webkit-box-sizing: border-box;
 }
 
-i {
-  color: red;
+body {
+  max-width: 2880px;
+}
+
+header {
+  display: flex;
+  
 }
