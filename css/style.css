@@ -2,7 +2,6 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border: 0px #0065FC solid;
 }
 
 @font-face{
@@ -27,6 +26,10 @@ a {
 
 a :focus {
   color: black;
+}
+
+header {
+  display: flex;  
 }
 
 .recherche {
@@ -83,7 +86,6 @@ a :focus {
   font-size: 23px;
 }
 
-
 .filtres {
   font-size: large;
   font-weight: bolder;
@@ -98,7 +100,6 @@ a :focus {
   margin: 0px;
   display: flex;
   align-items: center;
-
 }
 
 .filtre {
