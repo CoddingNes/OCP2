@@ -29,14 +29,14 @@ a :focus {
 }
 
 
-//header
+/*header*/
 
 header {
   display: flex;  
 }
 
 
-//section 1 : recherche
+/*section 1 : recherche*/
 
 .recherche {
   display: flex;
@@ -60,7 +60,12 @@ header {
   padding: 0px 15px 0px 15px;
 }
 
-.recherche__input, .recherche__button {
+::placeholder{
+  font-weight: bold;
+  color: black;
+}
+
+.recherche__button {
   font-weight:bold;
 }
 
@@ -140,7 +145,7 @@ header {
 }    
 
 
-//Section 2 : Hébergements
+/*Section 2 : Hébergements*/
 
 #section-hebergements {
   display: flex;
@@ -238,7 +243,7 @@ header {
   display: flex;
   font-size: small;
   color: #0065FC;
-  padding: 5px 5px 5px 15px;
+  padding: 5px 5px 5px 20px;
 }
 
 .grise {
@@ -246,12 +251,76 @@ header {
 }
 
 
+/*Section 3 : Activités dans le secteur*/
+
+#activites__articles {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1380px;
+  height: 400px;
+}
+
+.activites__articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.activites__article {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 25px -15px black;
+  width: 320px;
+  border-radius: 20px;
+  }
+
+  /*images de tous les articles*/
+.activites__articles img {
+  width : 320px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;  
+}
+
+/*article supérieur du premier duo d'articles*/
+#activites__articles :nth-child(2) article:first-of-type {
+  flex-shrink: 0;
+  border: 2px red solid;
+}
+
+/*article supérieur du premier duo d'articles*/
+#activites__articles :nth-child(2) article:first-of-type img {
+}
+
+/*images d'articles solo*/
+#activites__articles article:only-of-type img{
+  object-fit: cover;
+}
+
+/*images d'articles en duo*/
+#activites__articles :nth-child(even) img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.activites__articles h2 {
+  margin-left: 20px;
+}
+
+
+/*Footer*/
+
+footer {
+  display: flex;
+}
+
 
 
 /*code temporaire pour confort de dev*/ 
-img {
+/*img {
   display:;
-}
+}*/
 
 * {
   border: 0px #0065FC solid;
