@@ -325,7 +325,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 /*articles activités*/
@@ -374,16 +373,12 @@ main {
 /*images d'articles duos*/
 #activites__cards div:nth-of-type(even) img {
   width: 100%;
-  object-fit: cover;
 }
-
-/*articles supérieurs duo*/
-#activites__cards div:nth-of-type(even) article:first-of-type {
-  margin-bottom: 40px;}
 
 /*image d'article supérieur duo 1*/
 #activites__cards div:nth-of-type(2) article:first-of-type img {
   height: 235px;
+  object-fit: cover;
 }
 
 /*image d'article inférieur duo 1*/
@@ -391,19 +386,14 @@ main {
   height: 165px;
 }
 
-/*deuxième duo d'articles*/
-#activites__cards div:nth-of-type(4) {
-  height: 100% ;
-}
-
 /*image d'article supérieur duo 2*/
 #activites__cards div:nth-of-type(4) article:first-of-type img {
-  height: 195px;
+height: 195px;
 }
 
 /*image d'article inférieur duo 2*/
 #activites__cards div:nth-of-type(4) article:last-of-type img{
-  height: 209px;
+height: 209px;
 }
 
 
