@@ -30,7 +30,7 @@ a :focus {
 
 h1 {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 4px;
 }
 
@@ -48,8 +48,7 @@ height: 100%;
 } 
 
 .box__booki {
-margin-top: 30px;
-margin-bottom: 10px;
+margin:  30px 0px 10px 0px;
 height: 45px;
 }
 
@@ -65,7 +64,7 @@ list-style: none;
 display: flex;
 align-items: center;
 padding: 0px;
-margin: 0px;
+margin: 30px 0px 10px 0px;
 }
 
 header a {
@@ -73,7 +72,7 @@ margin: 0px;
 padding: 40px 30px 0px 30px;
 }
 
-header a:hover {
+header li:hover a{
 border-top: 4px #0065FC solid;
 color: #0065FC;
 font-weight: bolder;
@@ -84,6 +83,8 @@ font-weight: bolder;
 
 #recherche {
   margin: 0px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .recherche {
@@ -92,7 +93,7 @@ font-weight: bolder;
   align-items: center;
   border: 1px #F2F2F2 solid;
   border-radius: 17px 0px 0px 17px ;
-  width: 300px;
+  width: 390px;
   height: 50px;
 }
 
@@ -104,24 +105,38 @@ font-weight: bolder;
 
 .recherche__button {
   font-size: large;
+  font-weight:bold;
   border-radius: 0px 17px 17px 0px;
   padding: 0px 15px 0px 15px;
-}
-
-::placeholder{
-  font-size: large;
-  font-weight: bold;
-  color: black;
-}
-
-.recherche__button {
-  font-weight:bold;
-}
-
-.recherche__button {
   background-color: #0065FC;
   color: white;
   height: 50px;
+}
+
+.recherche__button-loupe {
+  display: none;
+}
+
+.fa-magnifying-glass {
+  display: none;
+}
+
+.recherche__input {
+  width: 100%;
+}
+
+.recherche__button:hover {
+  background-color: #DEEBFF;
+  border: 4px #0065FC solid;
+  color: #0065FC;
+  transform: translateX(6px);
+}
+
+::placeholder{
+  padding-left: 15px;
+  font-size: large;
+  font-weight: bold;
+  color: black;
 }
 
 .filtre__icone {
@@ -139,24 +154,25 @@ font-weight: bolder;
 }
 
 .filtre:hover .filtre__icone {
-  width: 55px;
-  height: 55px;
+  transform: scale(1.1);
+  transform: rotate(360deg);
+  transition-duration: 450ms;
   background-color: #0065FC;
   color: #DEEBFF;
   font-size: 23px;
 }
 
 .filtres {
-  font-size: large;
-  font-weight: bolder;
-  text-transform: capitalize;
-  height: 50px;
   display: flex;
-  margin: 30px 0px 20px;
+  justify-content: space-between;
+  max-width: 940px;
+  font-size: large;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .filtres > p {
-  padding-right: 22px;
+  padding-right: 10px;
   margin: 0px;
   display: flex;
   align-items: center;
@@ -165,13 +181,15 @@ font-weight: bolder;
 .filtre {
   display: flex;
   align-items: center;
-  border: 3px solid #F2F2F2;
+  border: 2px solid #F2F2F2;
   border-radius: 40px;
-  margin: 0px 18px 0px 10px;
+  margin-top: 25px;
 }
 
 .filtre p {
+  margin: 0px;
   padding: 0px 20px 0px 12px;
+  white-space: nowrap;
 }
 
 .information {
@@ -237,7 +255,7 @@ font-weight: bolder;
   background-color: white;
   box-shadow: 0px 0px 25px -15px black;
   width: 28.5%;
-  height: 200px;
+  height: 45%;
   padding: 4px;
   border-radius: 20px;
 }
@@ -351,16 +369,17 @@ font-weight: bolder;
 
 #activites__cards {
   display: flex;
-  justify-content: space-between;
-  height: 440px;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 100%;
+  margin-top: 0px;
 }
 
 .activites__cards {
-  width: 22.5%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /*articles activités*/
@@ -400,15 +419,11 @@ font-weight: bolder;
   height: 100%;
 }
 
-/*images d'articles solos*/
-#activites__cards div:nth-of-type(odd) img {
-}
-
 /*duos d'articles*/
 
 /*article supérieur duo 1*/
 #activites__cards div:nth-of-type(2) article:first-of-type {
-  height: 53%;
+  height: 100%;
 }
 
 #activites__cards div:nth-of-type(2) article:first-of-type a {
@@ -416,12 +431,12 @@ font-weight: bolder;
 }
 
 #activites__cards div:nth-of-type(2) article:first-of-type img {
-  height: 180px;
+  height: 100%;
 }
 
 /*article inférieur duo 1*/
 #activites__cards div:nth-of-type(2) article:last-of-type {
-  height: 37%;
+  height: 100%;
 }
 
 #activites__cards div:nth-of-type(2) article:last-of-type a {
@@ -429,25 +444,25 @@ font-weight: bolder;
 }
 
 #activites__cards div:nth-of-type(2) article:last-of-type img {
-  height: 109px;
+  height: 100%;
 }
 
 /*article supérieur duo 2*/
 #activites__cards div:nth-of-type(4) article:first-of-type {
-  height: 44%;
+  height: 100%;
   }
   
 #activites__cards div:nth-of-type(4) article:first-of-type img {
-  height: 139px;
+  height: 100%;
 }
 
 /*article inférieur duo 2*/
 #activites__cards div:nth-of-type(4) article:last-of-type {
-  height: 47.5%;
+  height: 100%;
   }
   
 #activites__cards div:nth-of-type(4) article:last-of-type img {
-  height: 153px;
+  height: 100%;
 }
 
 .activites__card:hover {
