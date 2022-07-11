@@ -5,11 +5,6 @@
   border: 2px black none;
 }
 
-@font-face{
-font-family: 'Raleway';
-src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
-}
-
 html {
   scroll-behavior: smooth;
 }
