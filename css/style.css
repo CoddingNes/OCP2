@@ -254,10 +254,12 @@ font-weight: bolder;
   height: 45%;
   padding: 4px;
   border-radius: 20px;
-}
+}  
+
 
 .hebergements__card:hover {
   transform: scale(1.02);
+  transition-duration: 200ms;
 }
 
 .hebergements__card a {
@@ -304,6 +306,7 @@ font-weight: bolder;
 
 .populaires__card:hover {
   transform: scale(1.02);
+  transition-duration: 200ms;
 }
 
 .populaires__card a {
@@ -356,6 +359,10 @@ font-weight: bolder;
   font-weight: bold;
 }
 
+#section-hebergements #afficher-plus:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
+}
+
 
 /*Section 3 : Activités dans le secteur*/
 #section-activites {
@@ -376,13 +383,7 @@ font-weight: bolder;
   justify-content: space-between;
 }
 
-/*articles activités*/
-.activites__card {
-  display: flex;
-  flex-direction: column;
-  }
-
-.activites__cards a {
+.activites__card a {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -392,76 +393,58 @@ font-weight: bolder;
   width: 100%;
 }
 
-/*images de tous les articles*/
-.activites__card img {
-  border-radius: 20px 20px 0px 0px ;  
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 40%;
-}
-
 .activites__cards h2 {
   height: 56px;
   margin: 0px;
   padding: 16px 0px 16px 20px;
-  border-radius: 0px 0px 20px 20px;
-  z-index: 1;
 }
 
 /*articles solos*/
-#activites__cards div:nth-of-type(odd) article {
+.port, .calanques {
   height: 100%;
 }
 
+.activites__card img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
 
-/*duos d'articles*/
-
-/*article supérieur duo 1*/
-#activites__cards div:nth-of-type(2) article:first-of-type {
+.fort {
   height: 53%;
 }
 
-#activites__cards div:nth-of-type(2) article:first-of-type a {
-  height: 100%;
+.fort img {
+  height: 179px;
 }
 
-#activites__cards div:nth-of-type(2) article:first-of-type img {
-  height: 180px;
-}
-
-/*article inférieur duo 1*/
-#activites__cards div:nth-of-type(2) article:last-of-type {
+.ile {
   height: 37%;
 }
 
-#activites__cards div:nth-of-type(2) article:last-of-type a {
-  height: 100%;
-}
-
-#activites__cards div:nth-of-type(2) article:last-of-type img {
+.ile img {
   height: 109px;
 }
 
-/*article supérieur duo 2*/
-#activites__cards div:nth-of-type(4) article:first-of-type {
-  height: 44%;
+.notre-dame {
+  height: 43%;
   }
   
-#activites__cards div:nth-of-type(4) article:first-of-type img {
+.notre-dame img {
   height: 139px;
-}
-
-/*article inférieur duo 2*/
-#activites__cards div:nth-of-type(4) article:last-of-type {
-  height: 47.5%;
   }
   
-#activites__cards div:nth-of-type(4) article:last-of-type img {
+.longchamp {
+  height: 47%;
+  }
+  
+.longchamp img {
   height: 153px;
-}
-
-.activites__card:hover {
+  }
+  
+  .activites__card:hover {
   transform: scale(1.02);
+  transition-duration: 200ms;
 }
 
   

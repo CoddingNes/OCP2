@@ -356,60 +356,44 @@ header li:hover {
     z-index: 1;
   }
   
-
   /*duos d'articles*/
   
   /*article supérieur duo 1*/
-  #activites__cards div:nth-of-type(2) article:first-of-type {
+  .fort {
     height: 100%;
   }
   
-  #activites__cards div:nth-of-type(2) article:first-of-type a {
-    height: 100%;
-  }
-  
-  #activites__cards div:nth-of-type(2) article:first-of-type img {
+  .fort img {
     height: 134px;
   }
   
   /*article inférieur duo 1*/
-  #activites__cards div:nth-of-type(2) article:last-of-type {
+  .ile {
     height: 100%;
   }
   
-  #activites__cards div:nth-of-type(2) article:last-of-type a {
-    height: 100%;
-  }
-  
-  #activites__cards div:nth-of-type(2) article:last-of-type img {
+  .ile img {
     height: 134px;
   }
   
   /*article supérieur duo 2*/
-  #activites__cards div:nth-of-type(4) article:first-of-type {
+  .notre-dame {
     height: 100%;
     }
     
-  #activites__cards div:nth-of-type(4) article:first-of-type img {
-    height: 134px;
+    .notre-dame img {
+      height: 134px;
   }
   
   /*article inférieur duo 2*/
-  #activites__cards div:nth-of-type(4) article:last-of-type {
+  .longchamp {
     height: 100%;
     }
-    
-    #activites__cards div:nth-of-type(4) article:last-of-type a {
-      height: 100%;
-    }
-    
-  #activites__cards div:nth-of-type(4) article:last-of-type img {
-    height: 134px;
+
+    .longchamp img {
+      height: 134px;
   }
-  
-  .activites__card:hover {
-    transform: scale(1.02);
-  }
+
   
   
   /*Footer*/
