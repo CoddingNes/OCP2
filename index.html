@@ -6,13 +6,15 @@
         <title>Booki-Votre hébergement pour des vacances de rêve!</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" media="all and (max-width: 768px)" type="text/css" href="css/style_mobile.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
             <div class="box__booki"><img class="booki" src="images/images/logo/Booki@3x.png" alt="Logo Booki" title="Logo Booki" /></div>
-            <nav class="box__booki">
+            <nav>
                 <ul>
                     <li><a href="#section-hebergement">Hébergements</a></li>
                     <li><a href="#section-activites">Activités</a></li>
@@ -30,6 +32,7 @@
                         <i class="fa-solid fa-location-dot"></i>
                         <input class="recherche__input" type="text" placeholder="Marseille, France" id="place" expected>
                         <button class="recherche__button">Rechercher</button>
+                        <button class="recherche__button-loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div class="filtres">
                         <p>filtres</p>
@@ -61,7 +64,9 @@
             <section id="section-hebergements">
                 <!--Tous les hébargements-->
                 <div id="hebergements">
-                    <h1>Hébergements à Marseille</h1>
+                    <div class="hebergements__titre">
+                        <h1>Hébergements à Marseille</h1>
+                    </div>
                     <div class="hebergements__cards">
                         <article class="hebergements__card"><a href="#">
                             <img src="images/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de l'Auberge de la Cannebière" />
@@ -77,7 +82,6 @@
                         </a></article>
                         <article class="hebergements__card"><a href="#">
                             <img src="images/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/>
-
                             <h2>Hôtel du port</h2>
                             <p>Nuit à partir de 52<strong>€</strong></p>
                             <div class="etoiles">
@@ -137,7 +141,7 @@
                             </div>
                         </a></article>
                     </div>
-                    <p id="afficher-plus"><a href="#">Afficher plus</a></p>
+                    <a href="#"><p id="afficher-plus">Afficher plus</p></a>
                 </div>
                 <!--Hébergements les plus populaires-->
                 <div id="populaires">
@@ -203,36 +207,36 @@
                 <h1>Activités à Marseille</h1>
                 <div id="activites__cards">
                     <div class="activites__cards">
-                        <article class="activites__card"><a href="#">
+                        <article class="activites__card port"><a href="#">
                             <img src="images/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo d'activité"/>
                             <h2>Vieux Port</h2>
                         </a></article>
                     </div>
                     <div class="activites__cards">
-                        <article class="activites__card">
+                        <article class="activites__card fort"><a href="#">
                             <img src="images/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo d'activité"/>
                             <h2>Fort de Pomègues</h2>
-                        </article>
-                        <article class="activites__card">
+                        </a></article>
+                        <article class="activites__card ile"><a href="#">
                             <img src="images/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo d'activité"/>
                             <h2>Îles du Frioul</h2>
-                        </article>
+                        </a></article>
                     </div>
                     <div class="activites__cards">
-                        <article class="activites__card"><a href="#">
+                        <article class="activites__card calanques"><a href="#">
                             <img src="images/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo d'activité"/>
                             <h2>Parc National des Calanques</h2>
                         </a></article>
                     </div>
                     <div class="activites__cards">
-                        <article class="activites__card">
+                        <article class="activites__card notre-dame"><a href="#">
                             <img src="images/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo d'activité"/>
                             <h2>Notre-Dame-de-la-Garde</h2>
-                        </article>
-                        <article class="activites__card">
+                        </a></article>
+                        <article class="activites__card longchamp"><a href="#">
                             <img src="images/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo d'activité"/>
                             <h2>Parc Longchamp</h2>
-                        </article>
+                        </a></article>
                     </div>                   
                 </div>
             </section>
@@ -243,23 +247,23 @@
             <div class="footer__colonne">
                 <h4>A propos</h4>
                 <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
+                    <li><a href="#">Fonctionnement du site</li></a>
+                    <li><a href="#">Conditions générales de vente</li></a>
+                    <li><a href="#">Données et confidentialité</li></a>
                 </ul>
             </div>
             <div class="footer__colonne">
                 <h4>Nos hébergements</h4>
                 <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
+                    <li><a href="#">Charte qualité</li></a>
+                    <li><a href="#">Soumettre votre hôtel</li></a>
                 </ul>
             </div>
             <div class="footer__colonne">
                 <h4>Assistance</h4>
                 <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
+                    <li><a href="#">Centre d'aide</li></a>
+                    <li><a href="#">Nous contacter</li></a>
                 </ul>
             </div>
         </footer>
