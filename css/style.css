@@ -2,6 +2,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  border: 2px black none;
 }
 
 @font-face{
@@ -16,7 +17,6 @@ html {
 body {
 font-family: Raleway, Arial, Helvetica, sans-serif;
 margin: auto;
-max-width: 1440px;
 }
 
 a {
@@ -30,7 +30,7 @@ a :focus {
 
 h1 {
   font-size: 22px;
-  font-weight: bolder;
+  font-weight: 900;
   margin-bottom: 4px;
 }
 
@@ -92,7 +92,7 @@ font-weight: bolder;
   text-align: center;
   align-items: center;
   border: 1px #F2F2F2 solid;
-  border-radius: 17px 0px 0px 17px ;
+  border-radius: 17px 17px 17px 17px ;
   width: 390px;
   height: 50px;
 }
@@ -101,6 +101,13 @@ font-weight: bolder;
   background-color: #F2F2F2;
   padding: 17px 20px 17px 17px;
   border-radius: 17px 0px 0px 17px ;
+}
+
+::placeholder{
+  padding-left: 15px;
+  font-size: large;
+  font-weight: bold;
+  color: black;
 }
 
 .recherche__button {
@@ -130,13 +137,6 @@ font-weight: bolder;
   border: 4px #0065FC solid;
   color: #0065FC;
   transform: translateX(6px);
-}
-
-::placeholder{
-  padding-left: 15px;
-  font-size: large;
-  font-weight: bold;
-  color: black;
 }
 
 .filtre__icone {
@@ -195,6 +195,7 @@ font-weight: bolder;
 .information {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .information__icon i {
@@ -362,24 +363,22 @@ font-weight: bolder;
 
 
 /*Section 3 : Activités dans le secteur*/
-
 #section-activites {
   margin: 65px 50px 0px 50px;
 }
 
 #activites__cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  height: 100%;
-  margin-top: 0px;
+  justify-content: space-between;
+  height: 440px;
+  margin-top: 20px;
 }
 
 .activites__cards {
-  width: 100%;
+  width: 22.5%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 /*articles activités*/
@@ -419,11 +418,12 @@ font-weight: bolder;
   height: 100%;
 }
 
+
 /*duos d'articles*/
 
 /*article supérieur duo 1*/
 #activites__cards div:nth-of-type(2) article:first-of-type {
-  height: 100%;
+  height: 53%;
 }
 
 #activites__cards div:nth-of-type(2) article:first-of-type a {
@@ -431,12 +431,12 @@ font-weight: bolder;
 }
 
 #activites__cards div:nth-of-type(2) article:first-of-type img {
-  height: 100%;
+  height: 180px;
 }
 
 /*article inférieur duo 1*/
 #activites__cards div:nth-of-type(2) article:last-of-type {
-  height: 100%;
+  height: 37%;
 }
 
 #activites__cards div:nth-of-type(2) article:last-of-type a {
@@ -444,32 +444,32 @@ font-weight: bolder;
 }
 
 #activites__cards div:nth-of-type(2) article:last-of-type img {
-  height: 100%;
+  height: 109px;
 }
 
 /*article supérieur duo 2*/
 #activites__cards div:nth-of-type(4) article:first-of-type {
-  height: 100%;
+  height: 44%;
   }
   
 #activites__cards div:nth-of-type(4) article:first-of-type img {
-  height: 100%;
+  height: 139px;
 }
 
 /*article inférieur duo 2*/
 #activites__cards div:nth-of-type(4) article:last-of-type {
-  height: 100%;
+  height: 47.5%;
   }
   
 #activites__cards div:nth-of-type(4) article:last-of-type img {
-  height: 100%;
+  height: 153px;
 }
 
 .activites__card:hover {
   transform: scale(1.02);
 }
 
-
+  
 /*Footer*/
 
 footer {
@@ -484,7 +484,7 @@ footer {
   width: 30%;
 }
 
-.footer__colonne ul {
+footer ul {
     list-style: none;
     padding: 0px;
     margin: 0px;    
@@ -498,10 +498,4 @@ footer h4 {
 
 footer li {
   margin: 0px 0px 10px 0px;
-}
-
-
-/*code temporaire pour confort de dev*/ 
-* {
-  border: 0px #0065FC solid;
 }

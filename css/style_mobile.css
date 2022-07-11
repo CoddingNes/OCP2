@@ -72,26 +72,9 @@ header li:hover {
   }
   
   .recherche {
-    display: flex;
-    text-align: center;
-    align-items: center;
     border: 1px #F2F2F2 solid;
-    border-radius: 17px 0px 0px 17px ;
     margin-top: 20px;
     width: 300px;
-    height: 50px;
-  }
-  
-  .fa-location-dot {
-    background-color: #F2F2F2;
-    padding: 17px 20px 17px 17px;
-    border-radius: 17px 0px 0px 17px ;
-  }
-  
-  ::placeholder{
-    font-size: large;
-    font-weight: bold;
-    color: black;
   }
   
   .recherche__button {
@@ -321,10 +304,10 @@ header li:hover {
   
   #activites__cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     gap: 25px;
-    height: 440px;
+    height: 100%;
     margin-top: 20px;
   }
 
@@ -336,7 +319,8 @@ header li:hover {
   .activites__cards {
     width: 90%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
     justify-content: space-between;
   }
   
@@ -344,6 +328,7 @@ header li:hover {
   .activites__card {
     display: flex;
     flex-direction: column;
+    height: 190px;
     }
   
   .activites__cards a {
@@ -359,7 +344,7 @@ header li:hover {
   /*images de tous les articles*/
   .activites__cards img {
     border-radius: 20px 20px 0px 0px ;  
-    height: 120px;
+    height: 134px;
     object-fit: cover;
   }
   
@@ -371,15 +356,12 @@ header li:hover {
     z-index: 1;
   }
   
-  /*articles solos*/
-  #activites__cards div:nth-of-type(odd) article {
-  }
-  
+
   /*duos d'articles*/
   
   /*article supérieur duo 1*/
   #activites__cards div:nth-of-type(2) article:first-of-type {
-    height: 53%;
+    height: 100%;
   }
   
   #activites__cards div:nth-of-type(2) article:first-of-type a {
@@ -387,12 +369,12 @@ header li:hover {
   }
   
   #activites__cards div:nth-of-type(2) article:first-of-type img {
-    height: 180px;
+    height: 134px;
   }
   
   /*article inférieur duo 1*/
   #activites__cards div:nth-of-type(2) article:last-of-type {
-    height: 37%;
+    height: 100%;
   }
   
   #activites__cards div:nth-of-type(2) article:last-of-type a {
@@ -400,25 +382,29 @@ header li:hover {
   }
   
   #activites__cards div:nth-of-type(2) article:last-of-type img {
-    height: 109px;
+    height: 134px;
   }
   
   /*article supérieur duo 2*/
   #activites__cards div:nth-of-type(4) article:first-of-type {
-    height: 44%;
+    height: 100%;
     }
     
   #activites__cards div:nth-of-type(4) article:first-of-type img {
-    height: 139px;
+    height: 134px;
   }
   
   /*article inférieur duo 2*/
   #activites__cards div:nth-of-type(4) article:last-of-type {
-    height: 47.5%;
+    height: 100%;
+    }
+    
+    #activites__cards div:nth-of-type(4) article:last-of-type a {
+      height: 100%;
     }
     
   #activites__cards div:nth-of-type(4) article:last-of-type img {
-    height: 153px;
+    height: 134px;
   }
   
   .activites__card:hover {
@@ -430,34 +416,30 @@ header li:hover {
   
   footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
     background-color: #F2F2F2;
-    padding: 50px;
-    margin-top: 60px;
+    padding: 40px 25px 25px 25px;
+    margin-top: 50px;
   }
   
   .footer__colonne {
-    width: 30%;
+    width: 100%;
   }
   
-  .footer__colonne ul {
+  footer ul {
       list-style: none;
+      font-size: 14px;
       padding: 0px;
       margin: 0px;    
   }
   
   footer h4 {
-    font-size: large;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 900;
     margin: 0px 0px 20px 0px;
   }
   
   footer li {
     margin: 0px 0px 10px 0px;
-  }
-  
-  
-  /*code temporaire pour confort de dev*/ 
-  * {
-    border: 0px #0065FC solid;
   }
