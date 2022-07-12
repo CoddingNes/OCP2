@@ -119,6 +119,14 @@ header li:hover a{
   height: 50px;
 }
 
+.recherche__button:hover {
+  border: groove;
+}
+
+.recherche__button:focus {
+  border: inset;
+}
+
 .recherche__button-loupe {
   display: none;
 }
@@ -129,13 +137,6 @@ header li:hover a{
 
 .recherche__input {
   width: 100%;
-}
-
-.recherche__button:hover {
-  background-color: #DEEBFF;
-  border: 4px #0065FC solid;
-  color: #0065FC;
-  transform: translateX(6px);
 }
 
 .filtre__icone {
