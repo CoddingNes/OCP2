@@ -107,6 +107,7 @@ header li:hover a{
   font-size: 17px;
   font-weight: 800;
   color: black;
+  opacity: 1;
 }
 
 .recherche__button {

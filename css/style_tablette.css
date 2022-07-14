@@ -1,3 +1,5 @@
+/*section 1 : recherche*/
+
 .filtres {
     display: flex;
     flex-wrap: wrap;
@@ -21,9 +23,31 @@
     margin-top: 10px;
 }
 
+
+/*Section 2 : Hébergements*/
+
 #section-hebergements {
     flex-direction: column-reverse;
     padding: 25px 30px 25px 30px;
+}
+
+#hebergements {
+    width: 100%;
+    background-color: white;
+    border: 2px black ;
+    border-style: double none double none;
+}
+
+.hebergements__cards {
+    gap: 20px;
+}   
+
+.hebergements__card {
+    width: 31%;
+}
+
+#afficher-plus {
+    padding-bottom: 10px;
 }
 
 #populaires {
@@ -47,24 +71,8 @@
     height: 144px;
 }
   
-#hebergements {
-    width: 100%;
-    background-color: white;
-    border: 2px black ;
-    border-style: double none double none;
-}
 
-.hebergements__cards {
-    gap: 20px;
-}   
-
-.hebergements__card {
-    width: 31%;
-}
-
-#afficher-plus {
-    padding-bottom: 10px;
-}
+/*Section 3 : Activités dans le secteur*/
 
 #section-activites {
     margin: 30px 30px 0px 30px;
@@ -80,6 +88,9 @@
 .activites__cards {
     width: 45%;
 }
+
+
+/*Footer*/
 
 footer {
     margin-top: 30px;
