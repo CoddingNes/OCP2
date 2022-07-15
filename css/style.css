@@ -4,7 +4,6 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border: 2px black none;
 }
 
 html {
@@ -27,9 +26,25 @@ a :focus {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 800;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 800;
+  margin: 35px 0px 20px 0px;
+}
+
+h3 {
+  font-size :15px;
+  font-weight: bold;
+  margin: 11px 0px 5px 15px;
+}
+
+p {
+  font-size: 15px;
 }
 
 
@@ -47,8 +62,10 @@ header {
 } 
 
 .box__booki {
+  display: inline;
   margin:  30px 0px 10px 0px;
   height: 45px;
+  padding: 0px;
 }
 
 nav {
@@ -69,12 +86,12 @@ nav ul {
 header a {
   margin: 0px;
   padding: 40px 30px 0px 30px;
+  font-weight: 500;
 }
 
 header li:hover a{
   border-top: 4px #0065FC solid;
   color: #0065FC;
-  font-weight: 600;
 }
 
 
@@ -107,6 +124,7 @@ header li:hover a{
   font-size: 17px;
   font-weight: 800;
   color: black;
+  opacity: 1;
 }
 
 .recherche__button {
@@ -131,12 +149,9 @@ header li:hover a{
   display: none;
 }
 
-.fa-magnifying-glass {
-  display: none;
-}
-
 .recherche__input {
   width: 100%;
+  border : none;
 }
 
 .filtre__icone {
@@ -167,9 +182,12 @@ header li:hover a{
   justify-content: space-between;
   align-items: center;
   max-width: 940px;
+  text-transform: capitalize;
+}
+
+.filtres p {
   font-size: 17px;
   font-weight: 800;
-  text-transform: capitalize;
 }
 
 .filtres > p {
@@ -196,7 +214,6 @@ header li:hover a{
 .information {
   display: flex;
   align-items: center;
-
   margin-top: 20px;
 }
 
@@ -223,21 +240,15 @@ header li:hover a{
   padding: 25px 50px 25px 50px;
 }
 
-#section-hebergements h2 {
-  font-size: 16px;
-  font-weight: 800;
-  margin: 10px 5px 5px 16px;
-}
-
-#section-hebergements p{
+#section-hebergements p {
   font-size: 14px;
-  margin: 0px 5px 0px 16px;
+  margin: 0px 5px 0px 15px;
 }
 
 .hebergements__titre {
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 15%;
   margin-left: 30px;
 }
 
@@ -245,6 +256,7 @@ header li:hover a{
   background-color: #F2F2F2;
   border-radius: 25px;
   width: 66%;
+  height: 626px;
 }
 
 .hebergements__cards {
@@ -256,7 +268,7 @@ header li:hover a{
 
 .hebergements__card {
   background-color: white;
-  box-shadow: 0px 0px 25px -15px black;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1) ;
   width: 28.5%;
   height: 45%;
   padding: 4px;
@@ -292,7 +304,7 @@ header li:hover a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 15%;
   margin-left: 30px;
 }
 
@@ -306,7 +318,7 @@ header li:hover a{
 
 .populaires__card {
   display: flex;
-  width: 83%;
+  width: 84%;
   height: 144px;
 }
 
@@ -321,7 +333,7 @@ header li:hover a{
   height: 100%;
   width: 100%;
   padding: 4px;
-  box-shadow: 0px 0px 25px -15px black;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1) ;
   border-radius: 20px;
 }
 
@@ -337,17 +349,11 @@ header li:hover a{
   justify-content: space-between;
 }
 
-  h2 {
-  font-size :15px;
-  font-weight: bold;
-  margin: 10px 0px 0px 20px;
-}
-
 .etoiles {
   display: flex;
-  font-size: small;
+  font-size: 12px;
   color: #0065FC;
-  padding: 10px 5px 5px 15px;
+  padding: 9px 5px 5px 16px;
 }
 
 .grise {
@@ -360,7 +366,7 @@ header li:hover a{
 }
 
 #section-hebergements #afficher-plus {
-  margin: 30px 0px 0px 32px;
+  margin: 40px 0px 0px 32px;
   font-size: 17px;
   font-weight: bold;
 }
@@ -372,7 +378,7 @@ header li:hover a{
 
 /*Section 3 : Activités dans le secteur*/
 #section-activites {
-  margin: 65px 50px 0px 50px;
+  margin: 35px 50px 0px 50px;
 }
 
 #activites__cards {
@@ -393,16 +399,16 @@ header li:hover a{
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: 0px 0px 25px -15px black;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1) ;
   border-radius: 20px;
   height: 100%;
   width: 100%;
 }
 
-.activites__cards h2 {
+.activites__cards h3 {
   height: 56px;
   margin: 0px;
-  padding: 16px 0px 16px 20px;
+  padding: 20px 0px 20px 20px;
 }
 
 .port, .calanques {
@@ -432,11 +438,11 @@ header li:hover a{
 }
 
 .notre-dame {
-  height: 43%;
+  height: 44%;
   }
   
 .notre-dame img {
-  height: 139px;
+  height: 138px;
   }
   
 .longchamp {
